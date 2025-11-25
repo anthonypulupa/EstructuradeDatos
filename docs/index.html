@@ -57,21 +57,13 @@
             list-style-type: disc;
             padding-left: 20px;
         }
-        /* Para hacer el menú fijo si fuera necesario (opcional) */
-        /*
-        nav {
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-        */
     </style>
 </head>
 <body>
 
     <header>
         <h1>ESTRUCTURA DE DATOS</h1>
-        <p>Tecnologías de la Información (Sede Orellana) - ESPOCH [cite: 7, 8]</p>
+        <p>Tecnologías de la Información (Sede Orellana) - ESPOCH</p>
     </header>
 
     <nav>
@@ -79,57 +71,130 @@
         <a href="#unidad2">Unidad 2</a>
         <a href="#unidad3">Unidad 3</a>
         <a href="#unidad4">Unidad 4</a>
+        <a href="#pilas">Pilas</a>
+        <a href="#colas">Colas</a>
     </nav>
 
     <div class="container">
 
+        <!-- ================== UNIDADES ORIGINALES ================== -->
+
         <section id="unidad1" class="unit-section">
-            <h2>Unidad No. 1: Fundamentos e Introducción a las Estructuras de Datos [cite: 14]</h2>
-            <p><strong>Resultado de Aprendizaje:</strong> Identifica las características y fundamentos de las estructuras de datos... [cite: 14]</p>
+            <h2>Unidad No. 1: Fundamentos e Introducción a las Estructuras de Datos</h2>
+            <p><strong>Resultado de Aprendizaje:</strong> Identifica las características y fundamentos de las estructuras de datos.</p>
             <h3>Temas Principales:</h3>
             <ul>
-                <li>Introducción (Historia, Características, Ventajas y Desventajas) [cite: 16]</li>
-                <li>Tipos de Datos (Primitivos, Compuestos, Agregados o Estructuras de Datos, Abstractas) [cite: 16]</li>
-                <li>Datos compuestos (Vectores, Matrices, Registros) [cite: 16]</li>
-                <li>Fundamentos de Algoritmia (Concepto, Representación, Introducción a las ciencias de la computación simplificadas) [cite: 16]</li>
+                <li>Introducción (Historia, Características, Ventajas y Desventajas)</li>
+                <li>Tipos de Datos</li>
+                <li>Datos compuestos (Vectores, Matrices, Registros)</li>
+                <li>Fundamentos de Algoritmia</li>
             </ul>
         </section>
 
         <section id="unidad2" class="unit-section">
-            <h2>Unidad No. 2: Estructuras de Datos Lineales [cite: 19]</h2>
-            <p><strong>Resultado de Aprendizaje:</strong> Analiza y aplica estructuras de datos lineales (listas, pilas y colas)... [cite: 20]</p>
+            <h2>Unidad No. 2: Estructuras de Datos Lineales</h2>
+            <p><strong>Resultado de Aprendizaje:</strong> Aplica estructuras como listas, pilas y colas.</p>
             <h3>Temas Principales:</h3>
             <ul>
-                <li>Pila - Stack (Concepto, Representación Gráfica, Operaciones, Aplicaciones) [cite: 22]</li>
-                <li>Cola - Queue (Concepto, Tipos y representación Gráfica, Operaciones, Aplicaciones) [cite: 22]</li>
-                <li>Lista - List (Nodo, Concepto de lista, Tipos y representación Gráfica, Operaciones, Aplicaciones) [cite: 22]</li>
+                <li>Pila - Stack</li>
+                <li>Cola - Queue</li>
+                <li>Lista - List</li>
             </ul>
         </section>
 
         <section id="unidad3" class="unit-section">
-            <h2>Unidad No. 3: Estructuras de Datos no Lineales [cite: 24]</h2>
-            <p><strong>Resultado de Aprendizaje:</strong> Analiza y aplica estructuras de datos no lineales (árboles y grafos)... [cite: 24]</p>
-            <h3>Temas Principales:</h3>
+            <h2>Unidad No. 3: Estructuras de Datos no Lineales</h2>
+            <p><strong>Resultado de Aprendizaje:</strong> Aplica árboles y grafos en la solución de problemas.</p>
             <ul>
-                <li>Visualización de algoritmos (Uso de técnicas y herramientas) [cite: 26]</li>
-                <li>Árboles (Definición, Representación, Recorrido, Métodos) [cite: 26]</li>
-                <li>Grafos (Definición, Tipos de Grafos, Propiedades) [cite: 26]</li>
+                <li>Visualización de algoritmos</li>
+                <li>Árboles</li>
+                <li>Grafos</li>
             </ul>
         </section>
 
         <section id="unidad4" class="unit-section">
-            <h2>Unidad No. 4: Búsqueda y Ordenamiento [cite: 27]</h2>
-            <p><strong>Resultado de Aprendizaje:</strong> Conoce y aplica los métodos comunes de ordenamiento y búsqueda para cada estructura de datos estudiada... [cite: 27]</p>
-            <h3>Temas Principales:</h3>
+            <h2>Unidad No. 4: Búsqueda y Ordenamiento</h2>
+            <p><strong>Resultado de Aprendizaje:</strong> Comprende y aplica algoritmos de ordenamiento y búsqueda.</p>
             <ul>
-                <li>Análisis de algoritmos (Complejidad temporal y espacial - Big O, Estudio de algoritmos clásicos, Aplicaciones en programación competitiva) [cite: 29]</li>
-                <li>Ordenamiento burbuja [cite: 29]</li>
-                <li>Ordenamiento quicksort [cite: 29]</li>
-                <li>Ordenamiento mergesort [cite: 29]</li>
-                <li>Búsqueda secuencial [cite: 29]</li>
-                <li>Búsqueda binaria [cite: 29]</li>
-                <li>Búsqueda hash [cite: 29]</li>
+                <li>Análisis de algoritmos (Big O)</li>
+                <li>Métodos de ordenamiento: burbuja, quicksort, mergesort</li>
+                <li>Búsquedas: secuencial, binaria, hash</li>
             </ul>
+        </section>
+
+        <!-- ================== NUEVA SECCIÓN: PILAS ================== -->
+
+        <section id="pilas" class="unit-section">
+            <h2>Pilas (STACK)</h2>
+
+            <p><strong>¿Para qué sirve una pila?</strong></p>
+            <p>
+                Una pila es una estructura de datos lineal que funciona bajo el principio 
+                <strong>LIFO (Last In, First Out)</strong>, donde el último elemento en ingresar 
+                es el primero en salir. Se utiliza en problemas donde es necesario 
+                llevar un control secuencial y reversible.
+            </p>
+
+            <h3>Características de una pila:</h3>
+            <ul>
+                <li>Acceso restringido a un solo extremo: la cima (TOP).</li>
+                <li>El último dato insertado es el primero en eliminarse.</li>
+                <li>Gestión ordenada y temporal de los datos.</li>
+                <li>Estructura simple pero muy eficiente en memoria.</li>
+            </ul>
+
+            <h3>Funciones principales:</h3>
+            <ul>
+                <li><strong>push(x):</strong> Inserta un elemento en la cima.</li>
+                <li><strong>pop():</strong> Elimina el último elemento insertado.</li>
+                <li><strong>peek():</strong> Obtiene el elemento en la cima sin eliminarlo.</li>
+                <li><strong>isEmpty():</strong> Verifica si la pila está vacía.</li>
+                <li><strong>isFull():</strong> (si es implementada con tamaño fijo).</li>
+            </ul>
+
+            <p><strong>Referencia del código implementado en Java:</strong></p>
+            <p>
+                <a href="https://github.com/anthonypulupa/Pila" target="_blank">
+                    ➤ Repositorio GitHub – Implementación de una Pila
+                </a>
+            </p>
+        </section>
+
+        <!-- ================== NUEVA SECCIÓN: COLAS ================== -->
+
+        <section id="colas" class="unit-section">
+            <h2>Colas (QUEUE)</h2>
+
+            <p><strong>¿Para qué sirve una cola?</strong></p>
+            <p>
+                Una cola es una estructura de datos lineal que sigue el principio 
+                <strong>FIFO (First In, First Out)</strong>, donde el primer elemento en ingresar 
+                es el primero en salir. Es ideal para gestionar procesos en espera o flujos ordenados.
+            </p>
+
+            <h3>Características de una cola:</h3>
+            <ul>
+                <li>Acceso por dos extremos: frente (front) y final (rear).</li>
+                <li>El primero que entra es el primero que sale.</li>
+                <li>Se usa en sistemas de turnos, impresoras, colas de procesos, etc.</li>
+                <li>Puede ser simple, circular, prioridad o doble cola.</li>
+            </ul>
+
+            <h3>Funciones principales:</h3>
+            <ul>
+                <li><strong>enqueue(x):</strong> Inserta un elemento al final.</li>
+                <li><strong>dequeue():</strong> Elimina el elemento del frente.</li>
+                <li><strong>front():</strong> Muestra el primer elemento sin eliminarlo.</li>
+                <li><strong>isEmpty():</strong> Verifica si la cola está vacía.</li>
+                <li><strong>isFull():</strong> (si la implementación tiene tamaño limitado).</li>
+            </ul>
+
+            <p><strong>Referencia del código implementado en Java:</strong></p>
+            <p>
+                <a href="https://github.com/anthonypulupa/colaImplementada" target="_blank">
+                    ➤ Repositorio GitHub – Implementación de una Cola
+                </a>
+            </p>
         </section>
 
     </div>
