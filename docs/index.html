@@ -23,6 +23,7 @@
             overflow: hidden;
             display: flex;
             justify-content: center;
+            flex-wrap: wrap;
         }
         nav a {
             float: left;
@@ -53,9 +54,32 @@
         h2 {
             color: #007bff;
         }
+        h3 {
+            color: #0056b3;
+            margin-top: 15px;
+        }
         ul {
             list-style-type: disc;
             padding-left: 20px;
+        }
+        .repo-link {
+            display: inline-block;
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+        }
+        .repo-link:hover {
+            background-color: #218838;
+        }
+        .highlight-box {
+            background-color: #e7f3ff;
+            border-left: 4px solid #007bff;
+            padding: 15px;
+            margin: 15px 0;
         }
     </style>
 </head>
@@ -73,6 +97,9 @@
         <a href="#unidad4">Unidad 4</a>
         <a href="#pilas">Pilas</a>
         <a href="#colas">Colas</a>
+        <a href="#arboles">Árboles</a>
+        <a href="#comparacion">Comparación</a>
+        <a href="#simulacion">Simulación</a>
     </nav>
 
     <div class="container">
@@ -122,7 +149,7 @@
             </ul>
         </section>
 
-        <!-- ================== NUEVA SECCIÓN: PILAS ================== -->
+        <!-- ================== PILAS ================== -->
 
         <section id="pilas" class="unit-section">
             <h2>Pilas (STACK)</h2>
@@ -154,13 +181,13 @@
 
             <p><strong>Referencia del código implementado en Java:</strong></p>
             <p>
-                <a href="https://github.com/anthonypulupa/Pila" target="_blank">
-                    ➤ Repositorio GitHub – Implementación de una Pila
+                <a class="repo-link" href="https://github.com/anthonypulupa/Pila" target="_blank">
+                    ➤ Ver Repositorio: Implementación de Pila
                 </a>
             </p>
         </section>
 
-        <!-- ================== NUEVA SECCIÓN: COLAS ================== -->
+        <!-- ================== COLAS ================== -->
 
         <section id="colas" class="unit-section">
             <h2>Colas (QUEUE)</h2>
@@ -191,8 +218,160 @@
 
             <p><strong>Referencia del código implementado en Java:</strong></p>
             <p>
-                <a href="https://github.com/anthonypulupa/colaImplementada" target="_blank">
-                    ➤ Repositorio GitHub – Implementación de una Cola
+                <a class="repo-link" href="https://github.com/anthonypulupa/colaImplementada" target="_blank">
+                    ➤ Ver Repositorio: Implementación de Cola
+                </a>
+            </p>
+        </section>
+
+        <!-- ================== ÁRBOLES BINARIOS ================== -->
+
+        <section id="arboles" class="unit-section">
+            <h2>Árboles Binarios (BINARY TREE)</h2>
+
+            <p><strong>¿Para qué sirve un árbol binario?</strong></p>
+            <p>
+                Un árbol binario es una estructura de datos no lineal compuesta por nodos, 
+                donde cada nodo puede tener como máximo dos hijos (izquierdo y derecho). 
+                Se utiliza para representar jerarquías, realizar búsquedas eficientes 
+                y organizar datos de forma estructurada.
+            </p>
+
+            <div class="highlight-box">
+                <h3>Características de un árbol binario:</h3>
+                <ul>
+                    <li>Cada nodo tiene como máximo dos hijos.</li>
+                    <li>Existe un nodo raíz del cual parten todos los demás.</li>
+                    <li>Los nodos sin hijos se llaman hojas.</li>
+                    <li>Permite recorridos: inorden, preorden, postorden.</li>
+                </ul>
+            </div>
+
+            <h3>Tipos de árboles binarios:</h3>
+            <ul>
+                <li><strong>Árbol Binario de Búsqueda (BST):</strong> Los valores menores van a la izquierda, los mayores a la derecha.</li>
+                <li><strong>Árbol Binario Completo:</strong> Todos los niveles están llenos excepto posiblemente el último.</li>
+                <li><strong>Árbol Binario Balanceado:</strong> La altura de los subárboles no difiere en más de 1 (ej: AVL).</li>
+            </ul>
+
+            <h3>Operaciones principales:</h3>
+            <ul>
+                <li><strong>Insertar:</strong> Agrega un nuevo nodo respetando las reglas del árbol.</li>
+                <li><strong>Buscar:</strong> Encuentra un nodo con un valor específico.</li>
+                <li><strong>Eliminar:</strong> Remueve un nodo manteniendo la estructura.</li>
+                <li><strong>Recorrer:</strong> Visita todos los nodos en un orden específico.</li>
+            </ul>
+
+            <p><strong>Aplicaciones comunes:</strong></p>
+            <ul>
+                <li>Sistemas de archivos jerárquicos</li>
+                <li>Bases de datos indexadas</li>
+                <li>Algoritmos de compresión (Huffman)</li>
+                <li>Expresiones aritméticas</li>
+            </ul>
+
+            <p><strong>Referencia del código implementado en Java:</strong></p>
+            <p>
+                <a class="repo-link" href="https://github.com/anthonypulupa/Arbolbinario" target="_blank">
+                    ➤ Ver Repositorio: Implementación de Árbol Binario
+                </a>
+            </p>
+        </section>
+
+        <!-- ================== COMPARACIÓN DE NÚMEROS ================== -->
+
+        <section id="comparacion" class="unit-section">
+            <h2>Comparación de Números (Mayor de 2 Números)</h2>
+
+            <p><strong>¿Para qué sirve este ejercicio?</strong></p>
+            <p>
+                Este proyecto implementa un algoritmo básico de comparación entre dos números 
+                para determinar cuál es el mayor. Aunque es un problema simple, es fundamental 
+                para entender estructuras de control y toma de decisiones en programación.
+            </p>
+
+            <div class="highlight-box">
+                <h3>Conceptos fundamentales aplicados:</h3>
+                <ul>
+                    <li><strong>Estructuras de control:</strong> Uso de condicionales (if-else).</li>
+                    <li><strong>Operadores relacionales:</strong> Comparación entre valores (>, <, ==).</li>
+                    <li><strong>Entrada y salida de datos:</strong> Lectura de valores y presentación de resultados.</li>
+                    <li><strong>Lógica algorítmica:</strong> Base para algoritmos más complejos.</li>
+                </ul>
+            </div>
+
+            <h3>Extensiones posibles del ejercicio:</h3>
+            <ul>
+                <li>Comparar 3 o más números</li>
+                <li>Ordenar un conjunto de números</li>
+                <li>Encontrar el mayor y menor simultáneamente</li>
+                <li>Implementar con arreglos dinámicos</li>
+            </ul>
+
+            <p><strong>Aplicación práctica:</strong></p>
+            <p>
+                Este tipo de lógica se utiliza en sistemas de clasificación, 
+                validación de datos, filtros de búsqueda, y como base para 
+                algoritmos de ordenamiento más complejos.
+            </p>
+
+            <p><strong>Referencia del código implementado en Java:</strong></p>
+            <p>
+                <a class="repo-link" href="https://github.com/anthonypulupa/Mayor2Numero" target="_blank">
+                    ➤ Ver Repositorio: Mayor de 2 Números
+                </a>
+            </p>
+        </section>
+
+        <!-- ================== SIMULACIÓN DE ESTRUCTURAS ================== -->
+
+        <section id="simulacion" class="unit-section">
+            <h2>Simulación de Estructuras de Datos</h2>
+
+            <p><strong>¿Para qué sirve esta simulación?</strong></p>
+            <p>
+                Este proyecto proporciona una representación visual e interactiva de diversas 
+                estructuras de datos. Permite comprender de manera práctica cómo funcionan 
+                las operaciones sobre estas estructuras mediante simulaciones gráficas.
+            </p>
+
+            <div class="highlight-box">
+                <h3>Características del simulador:</h3>
+                <ul>
+                    <li><strong>Interfaz gráfica:</strong> Visualización de operaciones en tiempo real.</li>
+                    <li><strong>Interactividad:</strong> Permite realizar operaciones paso a paso.</li>
+                    <li><strong>Múltiples estructuras:</strong> Simula pilas, colas, listas, árboles, etc.</li>
+                    <li><strong>Fines educativos:</strong> Ideal para el aprendizaje visual de conceptos.</li>
+                </ul>
+            </div>
+
+            <h3>Estructuras que puede simular:</h3>
+            <ul>
+                <li>Pilas (Push, Pop, Peek)</li>
+                <li>Colas (Enqueue, Dequeue)</li>
+                <li>Listas enlazadas (Insertar, Eliminar, Buscar)</li>
+                <li>Árboles binarios (Recorridos, Inserción)</li>
+                <li>Algoritmos de ordenamiento</li>
+            </ul>
+
+            <h3>Ventajas del aprendizaje visual:</h3>
+            <ul>
+                <li>Facilita la comprensión de conceptos abstractos</li>
+                <li>Permite experimentar sin escribir código</li>
+                <li>Identifica errores en la lógica de manera visual</li>
+                <li>Refuerza el aprendizaje mediante la práctica interactiva</li>
+            </ul>
+
+            <p><strong>Tecnologías utilizadas:</strong></p>
+            <p>
+                El proyecto está desarrollado en Java (98.9%) con componentes visuales CSS (1.1%), 
+                utilizando JavaFX o Swing para la interfaz gráfica. Compatible con NetBeans.
+            </p>
+
+            <p><strong>Referencia del código implementado en Java:</strong></p>
+            <p>
+                <a class="repo-link" href="https://github.com/anthonypulupa/SimulacionEstructura" target="_blank">
+                    ➤ Ver Repositorio: Simulación de Estructuras
                 </a>
             </p>
         </section>
@@ -201,10 +380,6 @@
 
 </body>
 </html>
-
-
-
-
 
 
 
