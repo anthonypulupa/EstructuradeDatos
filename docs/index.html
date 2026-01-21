@@ -97,6 +97,7 @@
         <a href="#unidad4">Unidad 4</a>
         <a href="#pilas">Pilas</a>
         <a href="#colas">Colas</a>
+        <a href="#listas">Listas</a>
         <a href="#arboles">Árboles</a>
         <a href="#comparacion">Comparación</a>
         <a href="#simulacion">Simulación</a>
@@ -220,6 +221,71 @@
             <p>
                 <a class="repo-link" href="https://github.com/anthonypulupa/colaImplementada" target="_blank">
                     ➤ Ver Repositorio: Implementación de Cola
+                </a>
+            </p>
+        </section>
+
+        <!-- ================== LISTAS SIMPLES ================== -->
+
+        <section id="listas" class="unit-section">
+            <h2>Listas Simples (LINKED LIST)</h2>
+
+            <p><strong>¿Para qué sirve una lista simple?</strong></p>
+            <p>
+                Una lista simple (o lista enlazada) es una estructura de datos lineal y dinámica 
+                donde cada elemento (nodo) contiene un dato y una referencia al siguiente nodo. 
+                A diferencia de los arreglos, permite inserción y eliminación eficiente de elementos 
+                sin necesidad de reorganizar toda la estructura.
+            </p>
+
+            <div class="highlight-box">
+                <h3>Características de una lista simple:</h3>
+                <ul>
+                    <li>Cada nodo contiene un dato y un puntero al siguiente nodo.</li>
+                    <li>El primer nodo se conoce como cabeza (head).</li>
+                    <li>El último nodo apunta a NULL, indicando el fin de la lista.</li>
+                    <li>Tamaño dinámico: crece o decrece según las necesidades.</li>
+                    <li>Acceso secuencial: se debe recorrer desde el inicio.</li>
+                </ul>
+            </div>
+
+            <h3>Operaciones principales:</h3>
+            <ul>
+                <li><strong>Insertar al inicio:</strong> Agrega un nodo al principio de la lista.</li>
+                <li><strong>Insertar al final:</strong> Añade un nodo al final de la lista.</li>
+                <li><strong>Insertar en posición:</strong> Inserta un nodo en una posición específica.</li>
+                <li><strong>Eliminar:</strong> Remueve un nodo según su valor o posición.</li>
+                <li><strong>Buscar:</strong> Localiza un nodo con un valor específico.</li>
+                <li><strong>Recorrer:</strong> Visita todos los nodos de la lista.</li>
+            </ul>
+
+            <h3>Ventajas de las listas simples:</h3>
+            <ul>
+                <li>Tamaño flexible sin desperdiciar memoria</li>
+                <li>Inserción y eliminación eficiente (O(1) al inicio)</li>
+                <li>No requiere memoria contigua como los arreglos</li>
+                <li>Base para estructuras más complejas (pilas, colas, grafos)</li>
+            </ul>
+
+            <h3>Desventajas:</h3>
+            <ul>
+                <li>Acceso secuencial: no permite acceso directo por índice</li>
+                <li>Usa memoria adicional para almacenar punteros</li>
+                <li>Búsquedas más lentas comparadas con arreglos</li>
+            </ul>
+
+            <p><strong>Aplicaciones comunes:</strong></p>
+            <ul>
+                <li>Implementación de pilas y colas dinámicas</li>
+                <li>Gestión de memoria (listas libres)</li>
+                <li>Representación de polinomios</li>
+                <li>Listas de reproducción, historial de navegación</li>
+            </ul>
+
+            <p><strong>Referencia del código implementado en Java:</strong></p>
+            <p>
+                <a class="repo-link" href="https://github.com/anthonypulupa/ListaSimple" target="_blank">
+                    ➤ Ver Repositorio: Implementación de Lista Simple
                 </a>
             </p>
         </section>
@@ -380,6 +446,5 @@
 
 </body>
 </html>
-
 
 
